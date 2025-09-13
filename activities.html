@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Module 2 — Activities</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+body {
+    margin:0;
+    font-family:'Inter',sans-serif;
+    background:linear-gradient(135deg,#ff6ec7,#7c3aed);
+    color:#fff;
+    line-height:1.6;
+}
+.site{max-width:1200px;margin:0 auto;padding:20px;}
+header{text-align:center;padding:20px;}
+header h1{font-size:3rem;margin:0;}
+header p{margin:10px 0 20px;font-size:1.2rem;}
+.btn{padding:10px 18px;border-radius:10px;border:none;cursor:pointer;font-weight:600;transition:0.3s;}
+.btn-primary{background:linear-gradient(90deg,#ff7eb9,#c77dff);color:#fff;}
+.btn-primary:hover{transform:scale(1.05);}
+.card{background:rgba(255,255,255,0.1);border-radius:12px;padding:20px;margin:20px 0;box-shadow:0 10px 30px rgba(0,0,0,0.25);}
+.card h3{margin-top:0;}
+.card p, .card li{color:#e0e0ff;}
+.card ul{padding-left:20px;margin:8px 0;}
+img.section-img{width:100%;border-radius:12px;margin-top:10px;object-fit:cover;max-height:300px;cursor:pointer;}
+.poster-gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin-top:10px;}
+.accordion{margin-top:10px;}
+.acc-title{cursor:pointer;padding:10px;background:rgba(255,255,255,0.05);border-radius:8px;margin-top:6px;display:flex;justify-content:space-between;align-items:center;}
+.acc-body{display:none;padding:10px;border-left:3px solid #ff7eb9;margin-top:4px;background:rgba(255,255,255,0.02);border-radius:8px;}
+footer{text-align:center;margin:40px 0 0;font-size:0.85rem;color:#f0e6ff;}
+@media(max-width:768px){
+    header h1{font-size:2.2rem;}
+    header p{font-size:1rem;}
+    img.section-img{max-height:200px;}
+}
+
+/* Lightbox styles */
+#lightbox {
+    display:none;
+    position:fixed;
+    z-index:9999;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.9);
+    justify-content:center;
+    align-items:center;
+}
+#lightbox img {
+    max-width:90%;
+    max-height:90%;
+    border-radius:12px;
+}
+#lightbox span {
+    position:absolute;
+    top:20px;
+    right:30px;
+    font-size:2rem;
+    cursor:pointer;
+    color:#fff;
+}
+</style>
+</head>
+<body>
+<div class="site">
+
+<header>
+  <h1>Activities</h1>
+  <p>Interactive exercises: Poster, Speech, Presentation, Quiz, Workshop, Field Activities.</p>
+  <a href="index.html" class="btn btn-primary">Back to Home</a>
+</header>
+
+<!-- Poster Activity -->
+<div class="card">
+  <h3>Poster Activity</h3>
+  <p>Create visually appealing posters on topics like environmental ethics, sustainability, and biodiversity.</p>
+  <ul>
+    <li>Choose a topic or theme relevant to Module 2.</li>
+    <li>Use colors, diagrams, and images to explain ideas.</li>
+    <li>Include facts, statistics, and examples.</li>
+    <li>Present the poster in class or online gallery.</li>
+  </ul>
+  <div class="poster-gallery">
+    <!-- 35 Poster Images -->
+    <img class="section-img" src="images/1.png" alt="Poster 1">
+    <img class="section-img" src="images/2.png" alt="Poster 2">
+    <img class="section-img" src="images/3.png" alt="Poster 3">
+    <img class="section-img" src="images/4.png" alt="Poster 4">
+    <img class="section-img" src="images/5.png" alt="Poster 5">
+    <img class="section-img" src="images/6.png" alt="Poster 6">
+    <img class="section-img" src="images/7.png" alt="Poster 7">
+    <img class="section-img" src="images/8.png" alt="Poster 8">
+    <img class="section-img" src="images/9.png" alt="Poster 9">
+    <img class="section-img" src="images/10.png" alt="Poster 10">
+    <img class="section-img" src="images/11.png" alt="Poster 11">
+    <img class="section-img" src="images/12.png" alt="Poster 12">
+    <img class="section-img" src="images/13.png" alt="Poster 13">
+    <img class="section-img" src="images/14.png" alt="Poster 14">
+    <img class="section-img" src="images/15.png" alt="Poster 15">
+    <img class="section-img" src="images/16.png" alt="Poster 16">
+    <img class="section-img" src="images/17.jpg" alt="Poster 17">
+    <img class="section-img" src="images/18.jpg" alt="Poster 18">
+    <img class="section-img" src="images/19.jpg" alt="Poster 19">
+    <img class="section-img" src="images/20.jpg" alt="Poster 20">
+    <img class="section-img" src="images/21.jpg" alt="Poster 21">
+    <img class="section-img" src="images/22.jpg" alt="Poster 22">
+    <img class="section-img" src="images/23.jpg" alt="Poster 23">
+    <img class="section-img" src="images/24.jpg" alt="Poster 24">
+    <img class="section-img" src="images/25.jpg" alt="Poster 25">
+    <img class="section-img" src="images/26.jpg" alt="Poster 26">
+    <img class="section-img" src="images/27.jpg" alt="Poster 27">
+    <img class="section-img" src="images/28.jpg" alt="Poster 28">
+    <img class="section-img" src="images/29.jpg" alt="Poster 29">
+    <img class="section-img" src="images/30.jpg" alt="Poster 30">
+    <img class="section-img" src="images/31.jpg" alt="Poster 31">
+    <img class="section-img" src="images/32.jpg" alt="Poster 32">
+    <img class="section-img" src="images/33.jpg" alt="Poster 33">
+    <img class="section-img" src="images/34.jpg" alt="Poster 34">
+    <img class="section-img" src="images/35.jpg" alt="Poster 35">
+  </div>
+</div>
+
+<!-- Speech Activity -->
+<div class="card">
+  <h3>Speech Activity</h3>
+  <p>Prepare and deliver speeches on environmental topics to develop communication and presentation skills.</p>
+  <ul>
+    <li>Select a relevant topic from Module 2.</li>
+    <li>Research facts, statistics, and real-world examples.</li>
+    <li>Practice clear and confident delivery.</li>
+    <li>Use visual aids or slides if required.</li>
+    <li>Time limit: 3–5 minutes per speech.</li>
+  </ul>
+  <img class="section-img" src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200" alt="Speech Activity">
+</div>
+
+<!-- Presentation Activity -->
+<div class="card">
+  <h3>Presentation Activity</h3>
+  <p>Create multimedia presentations to explain Module 2 topics to peers.</p>
+  <ul>
+    <li>Prepare slides on environmental ethics, biodiversity, or sustainable engineering.</li>
+    <li>Include images, diagrams, and short videos.</li>
+    <li>Use bullet points and concise text.</li>
+    <li>Practice speaking along with slides for effective delivery.</li>
+    <li>Share presentations in class or online platforms.</li>
+  </ul>
+  <img class="section-img" src="https://images.unsplash.com/photo-1581091870620-0b49a2f3e2ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200" alt="Presentation Activity">
+</div>
+
+<!-- Quiz Activity -->
+<div class="card">
+  <h3>Quiz Activity</h3>
+  <p>Test knowledge and encourage learning through quizzes.</p>
+  <ul>
+    <li>Create 10–20 questions from Module 2 topics.</li>
+    <li>Use multiple choice, true/false, or short answer formats.</li>
+    <li>Include a scoring system to track performance.</li>
+    <li>Conduct quizzes in groups or online.</li>
+    <li>Discuss answers and provide explanations after the quiz.</li>
+  </ul>
+  <img class="section-img" src="https://images.unsplash.com/photo-1596496053323-0db54f7f1343?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200" alt="Quiz Activity">
+</div>
+
+<!-- Workshop Activity -->
+<div class="card">
+  <h3>Workshop Activity</h3>
+  <p>Hands-on workshops help understand sustainable engineering and biodiversity practically.</p>
+  <ul>
+    <li>Build models of eco-friendly houses or green infrastructure.</li>
+    <li>Practice water conservation, recycling, or energy-saving methods.</li>
+    <li>Document observations and learning outcomes.</li>
+    <li>Work in teams for collaborative learning.</li>
+    <li>Showcase workshop results via photos or reports.</li>
+  </ul>
+  <img class="section-img" src="https://images.unsplash.com/photo-1592928306735-0206b6c38ee8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200" alt="Workshop Activity">
+</div>
+
+<!-- Field Activity -->
+<div class="card">
+  <h3>Field Activity</h3>
+  <p>Conduct outdoor studies to understand ecosystems, biodiversity, and environmental challenges.</p>
+  <ul>
+    <li>Observe local flora and fauna and document findings.</li>
+    <li>Conduct water, soil, or air quality assessments.</li>
+    <li>Map habitats, identify invasive species, or track biodiversity.</li>
+    <li>Prepare reports or presentations based on field data.</li>
+    <li>Share experiences and recommendations for conservation.</li>
+  </ul>
+  <img class="section-img" src="https://images.unsplash.com/photo-1506765515384-028b60a970df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200" alt="Field Activity">
+</div>
+
+<!-- Lightbox container -->
+<div id="lightbox" onclick="closeLightbox()">
+  <span>&times;</span>
+  <img src="" alt="Full Poster">
+</div>
+
+<footer>
+  Images: Unsplash (free to use) | Made by Amal
+</footer>
+
+<script>
+// Accordion
+function toggleAcc(el){
+  const body = el.nextElementSibling;
+  if(body.style.display==='block'){ 
+      body.style.display='none'; el.querySelector('span').textContent='+'; 
+  } else { 
+      body.style.display='block'; el.querySelector('span').textContent='−'; 
+  }
+}
+
+// Lightbox
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = lightbox.querySelector('img');
+
+document.querySelectorAll('.poster-gallery img').forEach(img=>{
+    img.addEventListener('click', ()=>{
+        lightbox.style.display = 'flex';
+        lightboxImg.src = img.src;
+    });
+});
+
+function closeLightbox(){
+    lightbox.style.display = 'none';
+}
+</script>
+</body>
+</html>

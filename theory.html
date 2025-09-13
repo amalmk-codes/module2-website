@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Module 2 — Complete Theory</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+body {
+    margin:0;
+    font-family:'Inter',sans-serif;
+    background:linear-gradient(135deg,#ff5fa2,#8a2be2); /* Pink → Purple gradient */
+    color:#fff;
+    line-height:1.6;
+}
+.site{max-width:1200px;margin:0 auto;padding:20px;}
+header{text-align:center;padding:20px;}
+header h1{font-size:3rem;margin:0;}
+header p{margin:10px 0 20px;font-size:1.2rem;}
+.btn{padding:10px 18px;border-radius:10px;border:none;cursor:pointer;font-weight:600;transition:0.3s;}
+.btn-primary{background:linear-gradient(90deg,#8a2be2,#ff5fa2);color:#fff;}
+.btn-primary:hover{background:linear-gradient(90deg,#ff5fa2,#8a2be2);transform:scale(1.05);}
+.card{background:rgba(255,255,255,0.1);border-radius:12px;padding:20px;margin:20px 0;box-shadow:0 10px 30px rgba(0,0,0,0.25);}
+.card h3{margin-top:0;}
+.card p, .card li{color:#ffd1f2;}
+.card ul{padding-left:20px;margin:8px 0;}
+.card table{width:100%;border-collapse:collapse;margin:10px 0;}
+.card table, .card th, .card td{border:1px solid #ffc0ff;}
+.card th, .card td{padding:8px;text-align:left;}
+img.section-img{width:100%;border-radius:12px;margin-top:10px;object-fit:cover;max-height:300px;}
+.accordion{margin-top:10px;}
+.acc-title{cursor:pointer;padding:10px;background:rgba(255,255,255,0.05);border-radius:8px;margin-top:6px;display:flex;justify-content:space-between;align-items:center;}
+.acc-body{display:none;padding:10px;border-left:3px solid #ff5fa2;margin-top:4px;background:rgba(255,255,255,0.02);border-radius:8px;}
+footer{text-align:center;margin:40px 0 0;font-size:0.85rem;color:#ffd1f2;}
+@media(max-width:768px){
+    header h1{font-size:2.2rem;}
+    header p{font-size:1rem;}
+    img.section-img{max-height:200px;}
+}
+</style>
+</head>
+<body>
+<div class="site">
+
+<header>
+  <h1>Module 2 — Complete Theory</h1>
+  <p>In-depth learning: Environmental Ethics, Sustainable Engineering, Ecosystems & Biodiversity, and Urban Ecology.</p>
+  <a href="index.html" class="btn btn-primary">Back to Home</a>
+</header>
+
+<!-- Environmental Ethics -->
+<div class="card">
+  <h3>Environmental Ethics</h3>
+  <p><strong>Definition:</strong> Environmental ethics explores the moral relationship between humans and the natural environment, providing frameworks for conservation, sustainability, and ethical decision-making.</p>
+  <p><strong>Importance:</strong> It guides environmental policies, laws, and personal behavior, influencing areas such as wildlife protection, pollution control, and sustainable development.</p>
+  
+  <div class="accordion">
+    <div class="acc-title" onclick="toggleAcc(this)">Historical Development <span>+</span></div>
+    <div class="acc-body">
+      <ul>
+        <li>Ancient Civilizations: Respect for nature in India, China, Egypt.</li>
+        <li>20th Century: Rachel Carson’s <em>Silent Spring</em> raised awareness about pesticides.</li>
+        <li>Aldo Leopold’s Land Ethic: Ethical responsibility towards ecosystems.</li>
+        <li>Modern movements: Global environmental protection & sustainability initiatives.</li>
+      </ul>
+    </div>
+    <div class="acc-title" onclick="toggleAcc(this)">Key Theories <span>+</span></div>
+    <div class="acc-body">
+      <table>
+        <tr><th>Theory</th><th>Description</th></tr>
+        <tr><td>Anthropocentrism</td><td>Humans are the primary concern; nature valued for human benefit.</td></tr>
+        <tr><td>Biocentrism</td><td>All living organisms have intrinsic value.</td></tr>
+        <tr><td>Ecocentrism</td><td>Ecosystems and ecological processes have intrinsic worth beyond individual organisms.</td></tr>
+      </table>
+    </div>
+    <div class="acc-title" onclick="toggleAcc(this)">Examples <span>+</span></div>
+    <div class="acc-body">
+      <ul>
+        <li>Protected forests and wildlife sanctuaries</li>
+        <li>Ethical consumption of resources</li>
+        <li>Pollution control and environmental policies</li>
+      </ul>
+    </div>
+  </div>
+  <img class="section-img" src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1200&q=60" alt="Environmental Ethics">
+</div>
+
+<!-- Sustainable Engineering -->
+<div class="card">
+  <h3>Sustainable Engineering</h3>
+  <p><strong>Definition:</strong> Engineering that meets present needs without compromising the future, minimizing environmental harm.</p>
+  <ul>
+    <li>Reduce energy and material consumption</li>
+    <li>Use renewable and recycled materials</li>
+    <li>Design for durability and recycling</li>
+  </ul>
+  <div class="accordion">
+    <div class="acc-title" onclick="toggleAcc(this)">Life Cycle Analysis (LCA) <span>+</span></div>
+    <div class="acc-body">
+      <ul>
+        <li>Raw material extraction</li>
+        <li>Manufacturing process</li>
+        <li>Usage and maintenance</li>
+        <li>End-of-life disposal or recycling</li>
+      </ul>
+    </div>
+    <div class="acc-title" onclick="toggleAcc(this)">Metrics <span>+</span></div>
+    <div class="acc-body">
+      <ul>
+        <li>Carbon footprint</li>
+        <li>Water footprint</li>
+        <li>Energy efficiency</li>
+        <li>Material circularity</li>
+      </ul>
+    </div>
+    <div class="acc-title" onclick="toggleAcc(this)">Case Studies <span>+</span></div>
+    <div class="acc-body">
+      <ul>
+        <li>Green buildings with passive cooling and rainwater harvesting</li>
+        <li>Solar-powered infrastructure</li>
+        <li>Recyclable consumer products</li>
+      </ul>
+    </div>
+  </div>
+  <img class="section-img" src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=1200&q=60" alt="Sustainable Engineering">
+</div>
+
+<!-- Ecosystems & Biodiversity -->
+<div class="card">
+  <h3>Ecosystems & Biodiversity</h3>
+  <p><strong>Basics:</strong> Ecosystems are networks of organisms interacting with the physical environment. They involve energy flow, nutrient cycles, and food webs.</p>
+  <p><strong>Functions:</strong> Food, water, air purification, pollination, climate regulation, and cultural benefits.</p>
+  <div class="accordion">
+    <div class="acc-title" onclick="toggleAcc(this)">Human Impact <span>+</span></div>
+    <div class="acc-body">
+      <ul>
+        <li>Deforestation and habitat loss</li>
+        <li>Pollution of air, soil, and water</li>
+        <li>Invasive species</li>
+        <li>Climate change effects</li>
+      </ul>
+    </div>
+    <div class="acc-title" onclick="toggleAcc(this)">Conservation Measures <span>+</span></div>
+    <div class="acc-body">
+      <ul>
+        <li>Protected areas and wildlife corridors</li>
+        <li>Reforestation and afforestation</li>
+        <li>Sustainable resource management</li>
+      </ul>
+    </div>
+    <div class="acc-title" onclick="toggleAcc(this)">Kerala Ecosystems <span>+</span></div>
+    <div class="acc-body">
+      <ul>
+        <li>Western Ghats – biodiversity hotspot</li>
+        <li>Mangroves and backwaters</li>
+        <li>Tropical forests and riverine ecosystems</li>
+      </ul>
+    </div>
+  </div>
+  <img class="section-img" src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=60" alt="Biodiversity">
+</div>
+
+<!-- Landscape & Urban Ecology -->
+<div class="card">
+  <h3>Landscape & Urban Ecology</h3>
+  <p><strong>Principles:</strong> Study spatial patterns, ecological connectivity, and habitat corridors.</p>
+  <p><strong>Urbanization Impacts:</strong> Heat islands, habitat fragmentation, pollution, stormwater runoff, biodiversity loss.</p>
+  <div class="accordion">
+    <div class="acc-title" onclick="toggleAcc(this)">Sustainable Planning <span>+</span></div>
+    <div class="acc-body">
+      <ul>
+        <li>Green roofs and urban forests</li>
+        <li>Parks and green belts</li>
+        <li>Permeable pavements for water management</li>
+        <li>Efficient public transport and mixed-use development</li>
+      </ul>
+    </div>
+    <div class="acc-title" onclick="toggleAcc(this)">Examples <span>+</span></div>
+    <div class="acc-body">
+      <ul>
+        <li>Rooftop gardens in urban centers</li>
+        <li>Urban wetlands for flood control</li>
+        <li>Eco-parks and nature reserves</li>
+        <li>Walkable neighborhoods reducing pollution</li>
+      </ul>
+    </div>
+  </div>
+  <img class="section-img" src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=1200&q=60" alt="Urban Ecology">
+</div>
+
+<footer>
+  Images: Unsplash (free to use) | Made by Amal
+</footer>
+</div>
+
+<script>
+function toggleAcc(el){
+  const body = el.nextElementSibling;
+  if(body.style.display==='block'){ body.style.display='none'; el.querySelector('span').textContent='+'; }
+  else{ body.style.display='block'; el.querySelector('span').textContent='−'; }
+}
+</script>
+</body>
+</html>

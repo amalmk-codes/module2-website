@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Module 2 — Landing Page</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<style>
+ 
+/* Base Styles */
+body{margin:0;font-family:'Inter',sans-serif;background:linear-gradient(135deg,#5b2cff,#1fb6ff);color:#fff;}
+.site{max-width:1200px;margin:0 auto;padding:20px;}
+a{text-decoration:none;color:inherit;}
+
+/* Hero Section */
+.hero{
+  position:relative;
+  height:70vh;
+  display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;
+  background:url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1600&q=60') center/cover no-repeat;
+  border-radius:14px;overflow:hidden;box-shadow:0 15px 40px rgba(0,0,0,0.25);
+}
+.hero::before{
+  content:'';
+  position:absolute;top:0;left:0;width:100%;height:100%;
+  background:linear-gradient(180deg,rgba(0,0,0,0.5),rgba(0,0,0,0.2));
+  z-index:1;
+}
+.hero-content{position:relative;z-index:2;padding:0 20px;}
+.hero h1{font-size:3rem;margin:0;}
+.hero p{margin:12px 0 20px;font-size:1.2rem;}
+.hero-buttons{display:flex;gap:15px;justify-content:center;flex-wrap:wrap;}
+.btn{padding:12px 20px;font-weight:600;border-radius:10px;border:none;cursor:pointer;transition:0.3s;}
+.btn-primary{background:linear-gradient(90deg,#7c3aed,#3dd6ff);color:#fff;}
+.btn-primary:hover{transform:scale(1.05);}
+.btn-secondary{background:rgba(255,255,255,0.2);color:#fff;}
+.btn-secondary:hover{background:rgba(255,255,255,0.35);transform:scale(1.05);}
+
+/* Vertical Section Cards */
+.section-card{
+  display:flex;flex-direction:column;margin:30px 0;border-radius:12px;overflow:hidden;
+  box-shadow:0 10px 30px rgba(0,0,0,0.25);transition:transform 0.3s;
+}
+.section-card:hover{transform:translateY(-8px);}
+.section-card img{width:100%;height:250px;object-fit:cover;}
+.section-card-body{padding:16px;background:rgba(0,0,0,0.2);}
+.section-card-body h3{margin:0 0 10px 0;font-size:1.5rem;}
+.section-card-body p{margin:0;font-size:1rem;color:#e0e0ff;}
+.section-card-body .btn-card{margin-top:12px;padding:10px 16px;font-size:1rem;}
+
+/* Footer */
+footer{text-align:center;margin:40px 0 0 0;font-size:0.85rem;color:#cfd8fc;}
+
+/* Responsive */
+@media(max-width:768px){
+  .hero h1{font-size:2.2rem;}
+  .hero p{font-size:1rem;}
+  .section-card img{height:180px;}
+}
+</style>
+</head>
+<body>
+
+<div class="site">
+
+<!-- Hero Section -->
+<header class="hero">
+  <div class="hero-content">
+    <h1>Module 2 — Environmental Ethics & Sustainability</h1>
+    <p>Learn interactively with theory, games, and hands-on activities!</p>
+    <div class="hero-buttons">
+      <a href="#theory" class="btn btn-primary">Explore Theory</a>
+      <a href="#games" class="btn btn-secondary">Play Games</a>
+      <a href="#activities" class="btn btn-secondary">Activities</a>
+    </div>
+  </div>
+</header>
+
+<!-- Theory Section -->
+<a href="theory.html" id="theory" class="section-card">
+  <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=60" alt="Theory Image">
+  <div class="section-card-body">
+    <h3>Theory</h3>
+    <p>Deep dive into Environmental Ethics, Sustainable Engineering, Biodiversity, and Urban Ecology.</p>
+    <button class="btn btn-primary btn-card">Start Learning</button>
+  </div>
+</a>
+
+<!-- Games Section -->
+<a href="games.html" id="games" class="section-card">
+  <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=1200&q=60" alt="Games Image">
+  <div class="section-card-body">
+    <h3>Games & Quizzes</h3>
+    <p>Interactive quizzes, jumbled words, memory games, and more fun activities to test your knowledge.</p>
+    <button class="btn btn-primary btn-card">Play Games</button>
+  </div>
+</a>
+
+<!-- Activities Section -->
+<a href="activities.html" id="activities" class="section-card">
+  <img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=1200&q=60" alt="Activities Image">
+  <div class="section-card-body">
+    <h3>Activities</h3>
+    <p>Poster creation, speeches, group projects, and eco-activities for interactive learning.</p>
+    <button class="btn btn-primary btn-card">See Activities</button>
+  </div>
+</a>
+
+<footer>
+  Images: Unsplash (free to use) | Made by Amal
+</footer>
+
+</div>
+</body>
+</html>
